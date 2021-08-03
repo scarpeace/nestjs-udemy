@@ -1,7 +1,7 @@
-// Importante manter essa notação do nome do arquivo por conta do TYPEORM Sync
+// Ficar esperto com a nomeclatura do arquivo. O TypeORM precisa do .entity iy .repository
 
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
-import { TaskStatus } from './task.model';
+import { TaskStatus } from './task-status.enum';
 
 @Entity()
 export class Task {
